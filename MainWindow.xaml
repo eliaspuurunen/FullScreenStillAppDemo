@@ -1,0 +1,33 @@
+﻿<Window x:Class="FullScreenStillApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FullScreenStillApp"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="#110000FF"
+        Title="MainWindow" 
+        Height="450" 
+        Width="800"
+        WindowStyle="None"
+        Left="0"
+        Top="0"
+        MouseDown="Window_MouseDown">
+    <Grid>
+        <Image x:Name="imgHolder"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Stretch="UniformToFill"
+               Opacity="0">
+            
+        </Image>
+
+        <Border Background="Blue"
+                PreviewMouseDown="Border_PreviewMouseDown"
+                Height="16"
+                Width="16"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" />
+    </Grid>
+</Window>
